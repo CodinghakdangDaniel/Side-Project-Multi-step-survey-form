@@ -7,6 +7,7 @@
     <title>Side Project: Multi-step survey form</title>
 </head>
 <body>
+    <!-- Header Section -->
     <section id="header">
     <h1>Welcome to Adullam Church Survey</h1>
     <p>Our purpose is worship with the presence of the Holy Spirit</p>
@@ -29,17 +30,23 @@
                 <progress value="0" max="100" id="bar2"></progress>
             </div>
         </div>
-
     </section>
-
+    <!-- Main Section -->
     <section id="main">
         <div class="mainbox">
-        <h1>Social Profiles</h1>
+            <h1>Social Profiles</h1>
         <p>Step2 input box here</p>
-
+        
+        <div class="btn">
+            <button onclick="setFull()">Next</button>
+        </div>
+        <div class="btn">
+            <button onclick="setZero()">Prev</button>
+        </div>
+        
         <div class="inputbox">
             <form action="result.html" method="get" target="test"> 
-
+                
                 ID: <input id="name" type="text"><br>
                 나이: <input id="age" type="number"><br>
                 E-mail <input id="email" type="email"><br>
@@ -48,16 +55,12 @@
                 </div>
             </form>
         </div>
-
+        </div>
+        
         <!-- ifram 설정 -->
-            <iframe id="if" name="test"></iframe>
+        <iframe id="if" name="test"></iframe>
         
         <!-- Next 누른 뒤 2번째 Main Page -->
-
-
-            <div class="btn">
-                <button onclick="setZero()">Prev</button>
-            </div>
 
     </section>
 
