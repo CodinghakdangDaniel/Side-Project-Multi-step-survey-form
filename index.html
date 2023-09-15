@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" />
+    <title>Side Project: Multi-step survey form</title>
+</head>
+<body>
+    <section id="header">
+    <h1>Welcome to Adullam Church Survey</h1>
+    <p>Our purpose is worship with the presence of the Holy Spirit</p>
+    </section>
+
+    <section id="navBar">
+        <div class="navbox">
+            <div class="infobox">
+                <p>아둘람처치는 사람의 생각과 세상의 방법이 아닌 하나님의 방법대로 세워지는 교회가 될 것입니다.<br><br>
+                    사람이 주인이 되지 않고 하나님이 주인되는 교회,
+                      사람이 드러나지 않고 하나님만 드러나는 교회가 될것입니다.<br><br>
+                    아둘람처치는 예수님 때문에 웃고 우는 행복한 공동체가 될 것입니다.<br><br>
+                    그런 교회를 세우는 일에 귀한 여러분을 초대합니다.</p>
+            </div>
+        <div class="progressbox">
+            <div>
+                <progress value="0" max="100" id="bar1"></progress>
+            </div>
+            <div>
+                <progress value="0" max="100" id="bar2"></progress>
+            </div>
+        </div>
+
+    </section>
+
+    <section id="main">
+        <div class="mainbox">
+        <h1>Social Profiles</h1>
+        <p>Step2 input box here</p>
+
+        <div class="inputbox">
+            <form action="result.html" method="get" target="test"> 
+
+                ID: <input id="name" type="text"><br>
+                나이: <input id="age" type="number"><br>
+                E-mail <input id="email" type="email"><br>
+                <div class="btn">        
+                    <input type="submit" value="제출"/>
+                </div>
+            </form>
+        </div>
+
+        <!-- ifram 설정 -->
+            <iframe id="if" name="test"></iframe>
+        
+        <!-- Next 누른 뒤 2번째 Main Page -->
+
+
+            <div class="btn">
+                <button onclick="setZero()">Prev</button>
+            </div>
+
+    </section>
+
+
+
+
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
