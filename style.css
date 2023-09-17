@@ -72,20 +72,40 @@ body {
 }
 
 /* Button */
-.btn {
-    width: 200px;
-    height: 500px;
-    float: right;
+
+
+/* form */
+form {
+    max-width: 1000px;
+    margin: 10px auto;
+    background-color :aquamarine;
+    padding: 30px 20px;
+    box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.5);
 }
 
-/* Input Box */
-.inputbox {
-    display: flex;
-    flex-direction: column;
-    padding-top: 2rem;
-    gap: 4rem;
+.form-box {
+    text-align: left;
+    margin-bottom: 25px;
+
+}
+/* label 과 input 값을 다른 칸에 쓰기 위함 */
+.form-box label {
+    display: block;
+    margin-bottom: 20px;
 }
 
+.form-box input {
+    border: 1px solid #777;
+    border-radius: 2px;
+    padding: 10px;
+    display: block;
+    width: 95%;
+}
+
+.form-box input[type='radio'] {
+    display: inline-block;
+    width: auto;
+}
 /* iframe 을 숨기기 위한 css */
 #if {
     width: 0px;

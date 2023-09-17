@@ -43,22 +43,79 @@
         <div class="btn">
             <button onclick="setZero()">Prev</button>
         </div>
-        
-        <div class="inputbox">
-            <form action="result.html" method="get" target="test"> 
+
+            <form action="result.html" method="get" target="test">
+                <div class="form-box">
+                    <label for="name" id="label-name">
+                        Name
+                    </label>
+                    <input type="text"
+                            id="name" 
+                            placeholder="Enter your name"/>
+                </div>
+
+                <div class="form-box">
+                    <label>Select your age</label>
                 
-                ID: <input id="name" type="text"><br>
-                나이: <input id="age" type="number"><br>
-                E-mail <input id="email" type="email"><br>
+                    <label for="age1">
+                        <input type="radio"
+                                id="age1"
+                                name="age">10대</input>
+                    </label>
+                    <label for="age2">
+                        <input type="radio"
+                                id="age2"
+                                name="age">20대</input>
+                    </label>
+                    <label for="age3">
+                        <input type="radio"
+                                id="age3"
+                                name="age">30대</input>
+                    <label for="age4">
+                        <input type="radio"
+                                id="age4"
+                                name="age">40대</input>
+                    </label>
+                    <label for="age5">
+                        <input type="radio"
+                                id="age5"
+                                 name="age">50대</input>
+              
+                    <label for="age6">
+                        <input type="radio"
+                                id="age6"
+                                name="age">60대</input>
+                    </label>
+
+                    <label for="age7">
+                        <input type="radio"
+                                id="age7"
+                                name="age">60대 이상</input>
+                    </label>
+                </div>
+
+                <div class="form-box">
+                    <label for="email" id="label-email">
+                        Email
+                    </label>
+                    <input type="email"
+                           id="email"
+                           placeholder="Enter your email" />
+                </div>
+                
+
                 <div class="btn">        
                     <input type="submit" value="제출"/>
                 </div>
             </form>
-        </div>
+
         </div>
         
         <!-- ifram 설정 -->
         <iframe id="if" name="test"></iframe>
+
+        <!-- 제출 후 화면 전환 일어나지 않도록 하는 기능
+            <iframe name="test" style="display:none"></iframe> -->
         
         <!-- Next 누른 뒤 2번째 Main Page -->
 
