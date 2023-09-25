@@ -14,7 +14,7 @@ let page1 = document.getElementById('page1');
 let page2 = document.getElementById('page2');
 
 document.querySelector('.nextBtn').addEventListener('click', () => {
-    document.querySelector('.full-container').style.transform = 'translate(0, -100vh)';
+    document.querySelector('.container1').style.transform = 'translateX(-1600px)';
 });
 
 

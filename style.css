@@ -10,17 +10,25 @@ body {
     box-sizing: border-box;
     background-image: url("img/img1.jpg");
     opacity: .8;
+    overflow: hidden;
 }
 
 .full-container {
-    width: 100vh;
-    height: 200vh;
-    float: left;
+    display: flex;
+    width: 1200px;
 }
 
-.sub-container {
-    width: 100vw;
-};
+.container1 {
+    width: 1200px;
+    /* overflow: hidden; */
+    height: 100vh;
+}
+
+.container2 {
+    width: 1200px;
+    overflow: hidden;
+}
+
 
 /* Header Section */
 #header {
@@ -84,12 +92,10 @@ body {
 }
 
 /* Entire Page */
-.page {
+/* .page {
     display: flex;
     flex-direction: column;
-}
-
-/* Page 1 */
+} */
 
 
 /* form */
