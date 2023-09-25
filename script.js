@@ -1,27 +1,22 @@
 // Progress Bar //
-function setFull() {
-    document.getElementById('bar1').value = '100';
-};
+// function setHalf() {
+//     document.getElementById('bar').value = '50';
+// };
 
 function setZero() {
-    document.getElementById('bar1').value = '0';
+    document.getElementById('bar').value = '0';
 };
 
 // Page Option //
 let nextBtn = document.getElementById('nextBtn');
-let preBtn = document.getElementById('preBtn')
+let prevBtn = document.getElementById('prevBtn')
 let page1 = document.getElementById('page1');
 let page2 = document.getElementById('page2');
 
-nextBtn.addEventListener('click', function() {
-    console.log('click');
-    page2.style.visibility = 'visible'
-    page1.style.visibility = 'hidden'
+document.querySelector('.nextBtn').addEventListener('click', () => {
+    document.querySelector('.full-container').style.transform = 'translate(0, -100vh)';
 });
 
-preBtn.addEventListener('click', function(){
-    page2.style.visibility = 'hidden'
-});
 
 /* iframe 설정 */
 function ifun(msg) {
